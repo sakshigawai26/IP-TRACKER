@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: indigo;
+    font-family: 'Lemonada', cursive;
+    ;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(229, 255, 0);
+    font-size: 70px;
+    font-family: 'Architects Daughter', cursive;
+    font-weight: 900;
+}
+
+.loadc {
+    display: none;
+}
+
+.loader {
+    width: 10px;
+    height: 30px;
+    background-color: palegreen;
+    margin: 3px;
+}
+
+.l1 {
+    animation: loading 1s ease-in-out infinite alternate;
+}
+
+.l2 {
+    animation: loading 1s ease-in-out infinite alternate 0.5s;
+}
+
+.l3 {
+    animation: loading 1s ease-in-out infinite alternate 0.8s;
+}
+
+.mainc {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.details {
+    text-align: center;
+}
+
+.ip-display,
+.loc-display,
+.geo-display {
+    font-size: xx-large;
+    color: ghostwhite;
+    margin: 5px;
+}
+
+.lookup-btn {
+    border: none;
+    background-color: lawngreen;
+    color: black;
+    font-size: medium;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: opacity 250ms linear;
+}
+
+.lookup-btn:hover {
+    opacity: 0.8;
+}
+
+@keyframes loading {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.3);
+    }
+}
